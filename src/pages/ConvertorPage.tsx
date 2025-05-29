@@ -27,7 +27,7 @@ const ConvertorPage = () => {
     setResult(null);
 
     try {
-      const res = await axios.post("https://pythonapi-conversion-backend.onrender.com/", {
+      const res = await axios.post("https://pythonapi-conversion-backend.onrender.com/convert", {
         type,
         from: fromUnit,
         to: toUnit,
