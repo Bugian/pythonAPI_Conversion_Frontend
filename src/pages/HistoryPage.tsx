@@ -13,7 +13,7 @@ const HistoryPage = () => {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/convert")
+    axios.get("https://pythonapi-conversion-backend.onrender.com/")
       .then(res => {
         setHistory(res.data);
         setLoading(false);
